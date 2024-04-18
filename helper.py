@@ -157,7 +157,6 @@ def generate_random_number():
 def check_even_odd(number):
     global defi
     if number % 2 == 0:
-        print("in_check")
         if c > 5:
             defi = defi + "to.net"
         elif c <5:
@@ -205,9 +204,7 @@ def calculator(number,string):
         ascii_sum = sum(ord(char) for char in string)
         if ascii_sum == number:
             check_even_odd(number)
-            print(number)
             chek_even_odd(ascii_sum)
-            print(ascii_sum)
             break
         else:
             # Increment/decrement the string as per your logic
